@@ -6,11 +6,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-  },
+  "repository": {},
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "ip-cidr": "^3.0.10",
     "koa": "^2.13.4",
     "koa-router": "^12.0.0",
     "node-libcurl": "^2.3.4"
