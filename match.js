@@ -5,6 +5,7 @@ function match(hostname, ip, port, https = false) {
         const url = `${https ? 'https' : 'http'}://${hostname}:${port}`;
         let child = spawn('curl', [
             url,
+            '-I',
             '--resolve',
             `${hostname}:${port}:${ip}`,
         ]);
