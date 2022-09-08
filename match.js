@@ -31,7 +31,9 @@ function match(hostname, ip, port, https = false) {
 }
 
 match('one.one.one.one', '1.1.1.1', 443, true)
-    .then(console.log)
+    .then((resp) => {
+        console.log(resp.toString());
+    })
     .catch(console.error);
 
 module.exports = match;
